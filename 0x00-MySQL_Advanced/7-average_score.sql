@@ -6,7 +6,7 @@ DELIMITER //
 CREATE PROCEDURE ComputeAverageScoreForUser(IN user_id INT)
 BEGIN
     DECLARE total_score INT DEFAULT 0;
-    DECLARE projects_count INT DEFAULT O;
+    DECLARE projects_count INT DEFAULT 0;
  
     SELECT SUM(score)
         INTO total_score
